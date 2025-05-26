@@ -3,7 +3,7 @@
 library(dplyr)
 library(stringr)
 
-setwd("/mfd_shallow_16S/scripts/")
+setwd("/mfd_shallow_16S")
 
 ### Import hmm results
 forward_files <- list.files("/R/hmm_forward_out", pattern = ".txt", full.names = T)
