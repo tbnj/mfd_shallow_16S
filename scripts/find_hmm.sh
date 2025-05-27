@@ -3,8 +3,8 @@
 
 # Paths
 DIR_IN=('/mfd_shallow_16S/data')
-DIR_OUT_F=('/mfd_shallow_16S/data/hmm_forward_out/')
-DIR_OUT_R=('/mfd_shallow_16S/data/hmm_reverse_out/')
+DIR_OUT_F=('/mfd_shallow_16S/R/hmm_forward_out/')
+DIR_OUT_R=('/mfd_shallow_16S/R/hmm_reverse_out/')
 
 # Find results for ARC and BAC
 find $DIR_IN -type f -name 'arc_*_forward.hmmout.txt' -exec ln -s '{}' $DIR_OUT_F ';'

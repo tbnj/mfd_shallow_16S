@@ -19,7 +19,6 @@ echoDuration() {
 
 ### Set up environment
 DIR_IN=('/mfd_shallow_16S/data/RUNNAME/')
-SEQ_IN=('/mfd_shallow_16S/data/RUNNAME/sequences_trim/')
 DIR_OUT_F=('forward')
 DIR_OUT_R=('reverse')
 HMMS=('/mfd_shallow_16S/databases/HMMS')
@@ -33,7 +32,7 @@ mkdir sintax_classification
 cd sintax_classification
 
 ## List of sample names for classification
-find $SEQ_IN/*_R1.fastq.gz > samples_classification.txt
+find $DIR_IN/*_R1.fastq.gz > samples_classification.txt
 
 ## Run pipleine on list of samples (handles both R1 and R2)
 while read -r line; do
