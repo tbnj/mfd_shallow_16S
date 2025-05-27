@@ -55,7 +55,7 @@ The output is structured in the following format (simpliied to only using result
 `scripts/find_sintax.sh` finds all [SINTAX](https://www.drive5.com/usearch/manual/cmd_sintax.html) output files and creates symlinks. 
 
 ### R processing
-`scripts/filter_reads.R` filters the combined pool of 16S rRNA gene reads to within the region between the 27F and 1391R primers for bacteria and 20F and SSU1000ArR for archaea. Splits output based on whether the origin was an MFD sample or an included control. 
+`scripts/filter_reads.R` filters the combined pool of 16S rRNA gene reads to within the region between the 8F and 1391R primers for bacteria and 20F and SSU1000ArR for archaea. Splits output based on whether the origin was an MFD sample or an included control. 
 
 
 `scripts/arcbac_sintax_to_combined_tax.R` creates one big file from all [SINTAX](https://www.drive5.com/usearch/manual/cmd_sintax.html) classifications. Filters the file so that either the forward or the reverse classification file is included if both are present. The read with the deepest classification is used. If the same depth is achieved the forward read is used.  
